@@ -34,6 +34,3 @@ It has as input the following arguments:
 	
 ## Example 
 An example of how both functions can be used.
-
-
----
