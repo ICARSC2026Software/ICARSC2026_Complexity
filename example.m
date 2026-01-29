@@ -13,14 +13,15 @@ DH.a = a;
 DH.alpha = alpha;
 
 % Right Arm
-rpy=[0.5236 0 1.5708];
+%rpy=[0.5236 0 1.5708];
 %Left Arm
-%rpyLeft=[-0.5236 0 -1.5708];
+rpyLeft=[-0.5236 0 -1.5708];
 
 computeComplexityTraj(DH,"Milho/P1_0.task",rpy);
 
 % computeComplexity
 fprintf("---------- Using computeComplexity func ----------\n")
 computeComplexity(500,200,300,1000,0.2,0.5,0.7,1106);
+
 
 
