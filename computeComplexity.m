@@ -27,18 +27,6 @@ if(xf>lengthArm || yf>lengthArm || zf>lengthArm || xf<0 || yf<-lengthArm || zf<-
     return;
 end
 
-if(droll>2*pi || droll<2*pi)
-    droll = droll/(2*pi);
-end
-
-if(dpitch>2*pi || dpitch<2*pi)
-    dpitch = dpitch/(2*pi);
-end
-
-if(dyaw>2*pi || dyaw<2*pi)
-    dyaw = dyaw/(2*pi);
-end
-
 minValues = [0,0,-lengthArm,-lengthArm,deg2rad(-180),deg2rad(-90),deg2rad(-180)];
 maxValues = [2*lengthArm,lengthArm,lengthArm,lengthArm,deg2rad(180),deg2rad(90),deg2rad(180)];
 
@@ -77,3 +65,4 @@ if(nargin==9)
 end
 
 end
+
