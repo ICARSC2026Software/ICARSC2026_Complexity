@@ -4,7 +4,7 @@ Code for evaluation of the complexity of a given movement.
 
 The complexity score is based on a weighted sum of seven individual metrics derived from the initial and final poses of a movement. 
 The seven individual metrics used are:
-- The coordinates of the target position ($x_f$,$y_f$,$z_f$);
+- The coordinates of the target position ($x_f$, $y_f$, $z_f$);
 - The distance between the final and initial position of the movement;
 - The reorientation of the end-effector from the initial to the final position ($\Delta_{\phi}$, $\Delta_{\theta}$ and $\Delta_{\psi}$)
 
@@ -34,5 +34,6 @@ It has as input the following arguments:
 	
 ## Example 
 An example of how both functions can be used.
+
 
 ---
