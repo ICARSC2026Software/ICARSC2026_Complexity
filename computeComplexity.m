@@ -22,6 +22,11 @@ if(distance > 2*lengthArm)
     return;
 end
 
+if(distance==0)
+    fprintf("Error: Distance equal to zero, there is no movement! Insert a positive value between 0 and 2x the arm length\n");
+    return;
+end
+
 if(xf>lengthArm || yf>lengthArm || zf>lengthArm || xf<0 || yf<-lengthArm || zf<-lengthArm)
     fprintf("Error: The given coordinates are outside of the robot's workspace!\nInsert another target position.\n");
     return;
@@ -65,4 +70,5 @@ if(nargin==9)
 end
 
 end
+
 
