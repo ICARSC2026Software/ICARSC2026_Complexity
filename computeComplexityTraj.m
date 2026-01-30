@@ -213,28 +213,6 @@ end
              (sin(alpha(i)) * sin(theta(i)))    (sin(alpha(i)) * cos(theta(i)))      (cos(alpha(i)))     (cos(alpha(i)) * d(i)) ;
                                            0                                  0                    0                          1 ];
 
-        % T(:,:,i) = ...
-        %     [               1                0                0          0 ;
-        %                     0    cos(alpha(i))   -sin(alpha(i))          0 ;
-        %                     0    sin(alpha(i))    cos(alpha(i))          0 ;
-        %                     0                0                0          1 
-        %     ] * ...
-        %     [               1                0                0       a(i) ;
-        %                     0                1                0          0 ;
-        %                     0                0                1          0 ;
-        %                     0                0                0          1 
-        %     ] * ...
-        %     [   cos(theta(i))   -sin(theta(i))                0          0 ;
-        %         sin(theta(i))    cos(theta(i))                0          0 ;
-        %                     0                0                1          0 ;
-        %                     0                0                0          1 
-        %     ] * ...
-        %     [               1                0                0          0 ;
-        %                     0                1                0          0 ;
-        %                     0                0                1       d(i) ;
-        %                     0                0                0          1 
-        %     ];
-
         T0_E = T0_E * T(:,:,i);
     end
 
@@ -460,6 +438,7 @@ else
     arm_type = arm_id;
     mov_type = mov_id;
 end
+
 
 
 
