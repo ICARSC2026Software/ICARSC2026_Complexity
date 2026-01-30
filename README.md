@@ -27,12 +27,13 @@ It has as input the following arguments:
 - Denavit-Hartenberg Parameters (Modified Convention) in form of struct
 	- DH.d = 1xnJoints
 	- DH.a = 1xnJoints
-	- DH.alpha = alpha
+	- DH.alpha = 1xnJoints
 	- Trajectory Filename
 	- rpyArm (optional) - RPY (ZYX) of the arm  - if none given it will be considered [0 0 0]
     - rpyArmLeft (optional) - In case of bimanual movements, is the RPY (ZPY) of the left arm - if none given it will be considered [0 0 0]
 	
 ## Example 
 An example of how both functions can be used.
+
 
 
